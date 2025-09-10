@@ -1,3 +1,39 @@
+/* Responsive Design */
+@media (max-width: 700px) {
+    .container {
+        max-width: 97vw;
+        padding: 12px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 28px;
+        margin-right: 6px;
+    }
+    .container {
+        padding: 8px;
+    }
+    footer {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
 /* Reset dasar */
 * {
     margin: 0;
@@ -10,6 +46,7 @@ body {
     line-height: 1.6;
     background: #1A1A1D;
     color: #fff;
+    transition: background 0.3s;
 }
 
 /* Navbar */
@@ -33,6 +70,13 @@ body {
     margin-right: 10px;
 }
 
+/* Fallback jika gambar logo tidak ada */
+.no-logo img  {
+    background: #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -46,23 +90,28 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background 0.3s;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .nav-links a:hover,
+.nav-links a:focus,
 .nav-links a.active {
     background: #A64D79;
-    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(166,77,121,0.3);
+    outline: 2px dashed #fff;
+    outline-offset: 2px;
 }
 
 /* Container utama untuk konten */
 .container {
     max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
-    background: #4B70F5;
+    padding: 24px;
+    background: #273469;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 /* Footer */
@@ -71,4 +120,6 @@ footer {
     padding: 15px;
     background: #6A1E55;
     color: #fff;
+    font-size: 0.98em;
+    letter-spacing: 0.5px;
 }
