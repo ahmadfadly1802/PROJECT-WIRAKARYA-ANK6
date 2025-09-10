@@ -54,3 +54,10 @@ body {
   background: #A64D79;
   border-radius: 5px;
 }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #6A1E55;
+  color: #fff;
+}
