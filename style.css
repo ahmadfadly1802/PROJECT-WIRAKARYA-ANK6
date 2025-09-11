@@ -123,3 +123,13 @@ footer {
     font-size: 0.98em;
     letter-spacing: 0.5px;
 }
+
+/*Fade-In Animation*/
+.fade-in-animated {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
