@@ -1,12 +1,20 @@
-// JS sederhana untuk interaksi
-console.log("Website OSIS siap digunakan 🚀");
+// Smooth scroll + fade-in animation
+document.addEventListener("click", (e) => {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (!anchor) return;
 
-// Smooth scroll (opsional untuk navigasi dalam halaman)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+    const href = anchor.getAttribute("href");
+    if (href === "#" || href.length < 2) return;
+
+    const targetEl = document.querySelector(href);
+    if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: "smooth" });
+
+        // Fade-in animation
+        targetEl.classList.add("fade-in-animated");
+        setTimeout(() => {
+        targetEl.classList.remove("fade-in-animated");
+        }, 1000);
+    }
 });
