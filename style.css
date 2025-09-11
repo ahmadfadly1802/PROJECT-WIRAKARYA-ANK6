@@ -140,17 +140,3 @@ footer {
     margin-top: 20px;
 }
 
-.visi, .motto {
-    flex: 1;
-    padding: 16px;
-    border-radius: 6px;
-    
-}
-
-
-@media (max-width: 500px) {
-    .visi-motto {
-        flex-direction: column;
-    }
-}
-
