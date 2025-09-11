@@ -14,7 +14,7 @@ document.addEventListener("click", (e) => {
         // Fade-in animation
         targetEl.classList.add("fade-in-animated");
         setTimeout(() => {
-        targetEl.classList.remove("fade-in-animated");
+            targetEl.classList.remove("fade-in-animated");
         }, 1000);
     }
 });
