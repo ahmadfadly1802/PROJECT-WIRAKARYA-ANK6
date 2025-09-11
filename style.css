@@ -133,19 +133,43 @@ footer {
     from { opacity: 0.2; }
     to { opacity: 1; }
 }
-.visi-motto{
-    display:flex;
-    gap:25px;
-    justify-content:space-around;
-    margin-top:20px;
+.visi-motto {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-.visi,motto{
-    flex:1;
-    padding:16x;
-    border-radius:6px;
+
+.visi, .motto {
+    flex: 1;
+    padding: 16px;
+    border-radius: 6px;
+    background: #1E2749; /* biar kelihatan bloknya */
 }
-@media (max-width:500px){
-    .visi-motto{
-        flex-direction:row;
+
+/* Responsif: kalau layar kecil, jadi vertikal */
+@media (max-width: 500px) {
+    .visi-motto {
+        flex-direction: column;
+    }
+}
+.visi-motto {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.visi, .motto {
+    flex: 1;
+    padding: 16px;
+    border-radius: 6px;
+    background: #1E2749; /* biar kelihatan bloknya */
+}
+
+/* Responsif: kalau layar kecil, jadi vertikal */
+@media (max-width: 500px) {
+    .visi-motto {
+        flex-direction: column;
     }
 }
