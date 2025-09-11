@@ -133,3 +133,19 @@ footer {
     from { opacity: 0.2; }
     to { opacity: 1; }
 }
+visi-motto{
+    display:flex;
+    gap:25px;
+    justify-content:space-around;
+    margin-top:20px;
+}
+visi,motto{
+    flex:1;
+    padding:16x;
+    border-radius:6px;
+}
+@media (max-width:500px){
+    .visi-motto{
+        flex-direction:row;
+    }
+}
