@@ -29,22 +29,38 @@
 
 
     <!-- 🔹 Konten Utama -->
-    <main class="container">
-        <section class="login-box">
-            <h1>Login Admin</h1>
-            <p>Masukkan username dan password untuk masuk ke dashboard.</p>
-
-            <form class="login-form">
+    <div class="login-container">
+        <div class="login-logo">
+            <img src="../assets/logo-pp-al-matlab.png" alt="Logo OP3">
+            <h2>Login Admin OP3 Al-Matlab</h2>
+        </div>
+        <form id="loginForm" autocomplete="off">
+            <div>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Masukkan username" required>
-
+            </div>
+            <div>
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Masukkan password" required>
-
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+        <div class="note">
+            <span>Lupa password? Hubungi admin OP3 ;).</span>
+        </div>
+    </div>
+    <!-- Toast feedback -->
+    <div id="login-toast" class="login-toast" style="display:none;">
+        <svg class="icon-success" style="display:none;" width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.14"/>
+            <path d="M7 13.2 10.285 16.5 17 9.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="icon-error" style="display:none;" width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#fff" fill-opacity="0.14"/>
+            <path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span id="login-toast-msg"></span>
+    </div>
 
     <!-- 🔹 Footer -->
     <footer>
