@@ -262,6 +262,46 @@ body {
     color: #666;
 }
 
+/* Form Aspirasi */
+.aspiration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.aspiration-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.aspiration-form input,
+.aspiration-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.aspiration-form textarea {
+    resize: vertical;
+}
+
+.aspiration-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.aspiration-form button:hover {
+    background: #0055aa;
+}
+
 
 /* Footer */
 footer {
