@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspirasi OP3 Al-Matlab Ank 6</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <meta name="description" content="Tempat santri untuk mengumpulkan aspirasi mereka kepada Organisasi Pelajar Pondok Pesantren Matlabus Salik (OP3) Al-Matlab. Made in East Java.">
+    <link rel="icon" type="image/png" href="../assets/logo-pp-al-matlab.png">
+</head>
+<body>
+
+<!-- 🔹 Header / Navbar -->
+    <header>
+        <nav class="navbar" aria-label="Main Navigation">
+            <div class="logo">
+                <img src="../assets/logo-pp-al-matlab.png" alt="OP3 LOGO">
+                <span>Organisasi Pelajar Pondok Pesantren Matlabus Salik</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="about.html">Profil</a></li>
+                <li><a href="activities.html">Kegiatan</a></li>
+                <li><a href="aspirations.html" class="active" aria-current="page">Aspirasi</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- 🔹 Konten Utama -->
+    <main class="container">
+        <section>
+            <h1>Form Aspirasi Santri</h1>
+            <p>
+                Sampaikan aspirasi, kritik, maupun saran Anda untuk kemajuan Ponpes Al-Matlab. 
+                Setiap aspirasi akan ditinjau oleh pengurus OP3.
+            </p>
+
+            <form class="aspiration-form">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda (Boleh anonim atau nama samaran)" required>
+
+                <label for="kelas">Kelas</label>
+                <input type="text" id="kelas" name="kelas" placeholder="Contoh: XI IPA 2" required>
+
+                <label for="aspirasi">Aspirasi / Saran</label>
+                <textarea id="aspirasi" name="aspirasi" rows="5" placeholder="Tulis aspirasi Anda..." required></textarea>
+
+                <button type="submit">Kirim Aspirasi</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- 🔹 Footer -->
+    <footer>
+        <p>&copy; 2025 OP3 Ank 6 | Dibuat oleh TIM IT Al-Matlab Ank 6</p>
+        <p>Kontak: -</p>
+    </footer>
+    
+    <script src="../assets/script.js"></script>
+</body>
+</html>
